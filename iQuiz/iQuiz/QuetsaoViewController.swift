@@ -16,8 +16,22 @@ class QuetsaoViewController: UIViewController {
     @IBOutlet var botoesRespostas: [UIButton]!
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
-        print(sender.tag)
+        let usuarioAcertouResposta = questoes[numeroQuestao].respostaCorreta == sender.tag
+        
+        if usuarioAcertouResposta {
+            pontuacao += 1; sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1.0)
+        } else {
+                    sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1.0)
+
+                
+            
+        }
+        if numeroQuestao < questoes.count - 1 {
+            numeroQuestao += 1
+            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(configurarQuestao), userInfo: nil, repeats: false)
+        }
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,8 +49,19 @@ class QuetsaoViewController: UIViewController {
             botao.layer.cornerRadius = 12.0
         }
     }
-    func configurarQuestao() {
-        TituloQuestaoLabel.text = questoes[numeroQuestao].titulo
+    // trecho de código suprimido
+
+    @objc func configurarQuestao() {
+            TituloQuestaoLabel.text = questoes[numeroQuestao].titulo
+                    for botao in botoesRespostas {
+                        let tituloBotao = questoes[numeroQuestao].resposta[botao.tag]
+                    botao.setTitle(tituloBotao, for: .normal)
+                        botao.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
+                                
+                    }
+        }
+
+    // trecho de código suprimido
         /*
          // MARK: - Navigation
          
@@ -48,4 +73,4 @@ class QuetsaoViewController: UIViewController {
          */
         
     }
-}
+
