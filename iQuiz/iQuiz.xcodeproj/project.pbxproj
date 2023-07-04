@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4286D6512A537A6C00852ECD /* Questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286D6502A537A6C00852ECD /* Questao.swift */; };
 		42D1F22C2A4AFEC400D72749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F22B2A4AFEC400D72749 /* AppDelegate.swift */; };
 		42D1F22E2A4AFEC400D72749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F22D2A4AFEC400D72749 /* SceneDelegate.swift */; };
 		42D1F2302A4AFEC400D72749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F22F2A4AFEC400D72749 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4286D6502A537A6C00852ECD /* Questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questao.swift; sourceTree = "<group>"; };
 		42D1F2282A4AFEC400D72749 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D1F22B2A4AFEC400D72749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D1F22D2A4AFEC400D72749 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		42D1F21F2A4AFEC400D72749 = {
 			isa = PBXGroup;
 			children = (
+				4286D6502A537A6C00852ECD /* Questao.swift */,
 				42D1F22A2A4AFEC400D72749 /* iQuiz */,
 				42D1F2292A4AFEC400D72749 /* Products */,
 			);
@@ -97,6 +100,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
@@ -144,6 +150,7 @@
 				42D1F2302A4AFEC400D72749 /* ViewController.swift in Sources */,
 				42D1F22C2A4AFEC400D72749 /* AppDelegate.swift in Sources */,
 				42D1F22E2A4AFEC400D72749 /* SceneDelegate.swift in Sources */,
+				4286D6512A537A6C00852ECD /* Questao.swift in Sources */,
 				42F9277F2A4D9B310020DEA7 /* QuetsaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
